@@ -24,6 +24,7 @@ if ($stmt = $pdo->prepare('SELECT id, password FROM users WHERE username = ?')) 
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
             echo 'Welcome ' . $_SESSION['name'] . '!';
+            header("location: ./index.php");
         } else {
             // Incorrect password
             echo 'Incorrect password!';
