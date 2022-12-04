@@ -16,7 +16,7 @@ require 'db.php'; //require connection script
          $pass = $_POST['password'];
 
          $pass = password_hash($_POST['password'], PASSWORD_DEFAULT);
-         var_dump($pass);
+       
          //Check if username exists
          $sql = "SELECT COUNT(username) AS num FROM users WHERE username =      :username";
          $stmt = $pdo->prepare($sql);
@@ -40,6 +40,7 @@ require 'db.php'; //require connection script
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':password', $pass);
     $stmt->execute();
+    header("location: ./login.html");
 }
 }catch(PDOException $e){
     $error = "Error: " . $e->getMessage();
