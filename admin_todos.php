@@ -59,8 +59,8 @@
                     <td><?php echo $id ?></td>
                     <td><?php echo $title  ?></td>
                     <td>
-                    <a class="btn btn-success btn-sm" href="edit.php?id=<?php echo $id ?>" role="button">Edit</a>
-                    <a class="btn btn-danger btn-sm" href="delete.php?id=<?php echo $id ?>" role="button">Delete</a>
+                    <a class="btn btn-success btn-sm" href="admin_edit.php?id=<?php echo $id ?>" role="button">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="admin_delete1.php?id=<?php echo $id ?>" role="button">Delete</a>
  
                     </td>
                       
