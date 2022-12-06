@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($command) {
         $split_command = explode(" ", $command);
-        $permited_commands = ['echo', 'getmac', 'arp'];
+        $permited_commands = ['echo', 'getmac', 'arp', 'time'];
         $not_permitted = ['|', '||', '&', '&&'];
         $exist = false;
         foreach ($not_permitted as $sign) {
@@ -31,29 +31,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 <style>
     span {
-        position: relative;
-        left: 30px;
+        position: center;
     }
 
     input {
-        outline: none;
+        outline: solid;
         padding: 5px;
         padding-left: 30px;
-        border: none;
-        font-size: large;
+        border: solid;
+        font-size: medium;
     }
 
     div {
-        border-top: solid 1px black;
+        border-top: solid 1px blue;
     }
 </style>
 <form action="" method="POST">
-    <span>>></span>
     <input type="text" name='command' required>
-    <button type="submit">run</button>
+    
 </form>
-<div>
-    <p><?php echo '<pre>';
-        print_r($result);
-        echo '</pre>'; ?></p>
-</div>
+<button type="submit">run</button>
+<p>
+    <?php echo '<pre>';
+    print_r($result);
+    echo '</pre>'; ?>
+</p>

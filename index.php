@@ -19,11 +19,7 @@
         </a>
       </p>
       
-    <p style = "position:fixed; right:80px; top:20px;">
-      <a href="cmd.php" class="btn btn-info btn-lg">
-        <span class="glyphicon glyphicon-log-out"></span> Command prompt
-      </a>
-      </p>
+    
     <div class="w-50 m-auto">
     <form action="data.php" method="post" autocomplete="off">
         <div class="form-group">
