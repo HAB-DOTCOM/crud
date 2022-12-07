@@ -1,1 +1,1 @@
-simple crud web 
+Our website allows users to list-out their todos on a daily basis. They can add, edit, or remove todos accordingly.
