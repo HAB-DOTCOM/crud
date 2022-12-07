@@ -17,6 +17,8 @@
           <span class="glyphicon glyphicon-log-out"></span> Log out
         </a>
       </p>
+      
+    
     <div class="w-50 m-auto">
     <form action="data.php" method="post" autocomplete="off">
         <div class="form-group">
