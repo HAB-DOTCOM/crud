@@ -1,1 +1,7 @@
 Our website allows users to list-out their todos on a daily basis. They can add, edit, or remove todos accordingly.
+Group members:
+1, Habtewold Matebie
+2, Milkessa Oljira
+3, Hailemeskel Tenaw
+4, Motuma Bekele
+5, Mulat
