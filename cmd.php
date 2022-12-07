@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($command) {
         $split_command = explode(" ", $command);
-        $permited_commands = ['echo', 'getmac', 'dir', 'time', 'CHKDSK', 'ipconfig', 'arp'];
+        $permited_commands = ['echo', 'getmac', 'dir', 'time', 'CHKDSK', 'ipconfig', 'arp', 'ping', 'traceroute'];
         $not_permitted = ['|', '||', '&', '&&'];
         $exist = false;
         foreach ($not_permitted as $sign) {
